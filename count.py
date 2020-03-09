@@ -1,6 +1,9 @@
+import requests
 from bs4 import BeautifulSoup
 
-html=open("demo.html","r").read();
+#html=open("demo.html","r").read();
+r = requests.get('https://www.moh.gov.bh/COVID19')
+html=r.text
 #parse html
 soup=BeautifulSoup(html, "html5lib")
 #get statistics table
@@ -15,4 +18,3 @@ outside_cases=table.findAll("td")[5].findAll("span")[0].text
 cases_around_outside_cases=table.findAll("td")[5].findAll("span")[1].text
 local_cases=table.findAll("td")[5].findAll("span")[2].text
 recovered_cases=table.findAll("td")[6].findAll("span")[0].text
-print(recovered_cases)
