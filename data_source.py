@@ -1,10 +1,24 @@
 #!/usr/bin/env python3
-
+import datetime
+import pytz
 import requests
+import json
 from bs4 import BeautifulSoup
 
 #html=open("demo.html","r").read();
 def get_data():
+	#read local cache file
+	local_file=open("cvbh.json","r").read()
+	#confirm the file is not empty
+	if(len(local_file)>5):
+		data=json.loads(local_file)
+		now=int(datetime.datetime.now(tz=pytz.utc).timestamp() * 1000)
+		#if less than 3min. request update cache, else return cache
+		if now-data["request_timestamp"] <(3*60*1000):
+			print("Return cache")
+			local_file.close()
+			return data
+	print("Return new data")
 	r = requests.get('https://www.moh.gov.bh/COVID19')
 	html=r.text
 	#parse html
@@ -22,6 +36,13 @@ def get_data():
 	data["cases_around_outside_cases"]=table.findAll("td")[5].findAll("span")[1].text
 	data["local_cases"]=table.findAll("td")[5].findAll("span")[2].text
 	data["recovered_cases"]=table.findAll("td")[6].findAll("span")[0].text
+	#get current UTC timestamp
+	#https://stackoverflow.com/a/52146362
+	data["request_timestamp"]=int(datetime.datetime.now(tz=pytz.utc).timestamp() * 1000)
+	#save as cache
+	file=open("cvbh.json","w")
+	file.write( json.dumps(data) )
+	file.close()
 	return data
 
 
