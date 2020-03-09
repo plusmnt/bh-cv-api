@@ -8,15 +8,16 @@ from bs4 import BeautifulSoup
 #html=open("demo.html","r").read();
 def get_data():
 	#read local cache file
-	local_file=open("cvbh.json","r").read()
+	local_file=open("cvbh.json","r")
+	local_data=local_file.read()
 	#confirm the file is not empty
-	if(len(local_file)>5):
-		data=json.loads(local_file)
+	if(len(local_data)>5):
+		data=json.loads(local_data)
 		now=int(datetime.datetime.now(tz=pytz.utc).timestamp() * 1000)
-		#if less than 3min. request update cache, else return cache
-		if now-data["request_timestamp"] <(3*60*1000):
-			print("Return cache")
+		#if less than 5min. request update cache, else return cache
+		if now-data["request_timestamp"] <(5*60*1000):
 			local_file.close()
+			print("Return cache")
 			return data
 	print("Return new data")
 	r = requests.get('https://www.moh.gov.bh/COVID19')
