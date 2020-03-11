@@ -1,6 +1,6 @@
 # Bahrain (COVID-19) statistics
 
-This a json interface for the [summary of cases table](https://www.moh.gov.bh/COVID19) in Bahrain Ministry of Health website.
+This is a json interface for the [summary of cases table](https://www.moh.gov.bh/COVID19) in Bahrain Ministry of Health website.
 
 ## [Live Demo](https://cvapi.awal.pw/)
 
