@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -497,7 +498,20 @@
 
                                     <div class="accordion-group">
                                         <div class="accordion-heading">
-                                            <a title="خدمة التسجيل لفحص فيروس كورونا (كوفيد-19)" class="accordion-toggle collapsed" data-parent="#accordion2" href="/COVID19/Infographic">
+                                            <a class="accordion-toggle collapsed" data-parent="#accordion2" href="/COVID19/Publications">
+                                                <em class="icon-fixed-width"></em>
+                                                <span class="accodian_heading_span">الإصدارات</span>
+                                            </a>
+                                        </div>
+                                        <div style="height: 0px;" id="collapseFive" class="accordion-body collapse">
+                                            <div class="accordion-inner">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle collapsed" data-parent="#accordion2" href="/COVID19/Infographic">
                                                 <em class="icon-fixed-width"></em>
                                                 <span class="accodian_heading_span">انفوجرافيك</span>
                                             </a>
@@ -608,7 +622,6 @@
         color: #c55a11;
     }
 
-
     .TRSize {
         /*text-overflow: ellipsis;*/
     }
@@ -646,6 +659,14 @@
         top: 50%;
         right: -10%;
         transform: translate(-50%, -50%);
+    }
+    .publication-view-more {
+        border: solid 0.7px #337ab7;
+        border-radius: 0%;
+        padding: 8px;
+        text-align: center;
+        width: 95px;
+        margin-bottom: 10px;
     }
 </style>
     <style>
@@ -872,77 +893,94 @@
                                 <br />
                                 
 
-                                <span style="color:gray;">9 مارس 2020 -  الساعة: 8:00 م</span>
-                                <table class="table table-hover table-striped table-bordered" style=" text-align:center; font-weight:bold; font-size:17px; margin-top:3px;">
+                                <span style="color:gray;">11 مارس 2020 -  الساعة: 10:00 ص</span>
+                                <table id="tbl1" class="table table-hover table-striped table-bordered" style=" text-align:center; font-weight:bold; font-size:17px; margin-top:3px;">
                                     <thead>
-                                            <tr style="background-color:#5b9bd5">
-                                                <th colspan="2" style="background-color:#5b9bd5; color:white; text-align:center">
-                                                    عدد الفحوصات
-                                                    <br />
-                                                    <span>7830</span>
-                                                </th>
-
-                                            </tr>
-                                                                                    <tr>
-                                                <td class="col-xs-6 TitleGreen">
-                                                    النتائج السليمة
-                                                    <br />
-                                                    <span>7743</span>
-                                                </td>
-                                                <td class="col-xs-6 TitleRed">
-                                                    الحالات القائمة
-                                                    <br />
-                                                    <span>87</span>
-                                                </td>
-                                            </tr>
-                                        <tr>
-                                            <td colspan="2" style="border-bottom:none;">
-                                               وضع الحالات القائمة
+                                        <tr style="background-color:#5b9bd5">
+                                            <th colspan="4" style="background-color:#5b9bd5; text-align:center; color:white;">
+                                                عدد الفحوصات
+                                                <br />
+                                                <span>8759</span>
+                                            </th>
+                                        </tr>
+                                                                            <tr>
+                                            <td colspan="4" class="TitleGreen">
+                                                النتائج السليمة
+                                                <br />
+                                                <span>8600</span>
                                             </td>
                                         </tr>
-                                            <tr>
-                                                <td class="col-xs-6 TitleGreen" style="border-left:none;border-top:none;">
-                                                    مستقرة
-                                                    <br />
-                                                    <span>86</span>
-                                                </td>
-                                                <td class="col-xs-6 TitleOrange" style="border-right:none;border-top:none;">
-                                                    تحت العناية
-                                                    <br />
-                                                    <span>1</span>
-                                                </td>
-                                            </tr>
+                                                                            <tr>
+                                            <td colspan="2" class="TitleRed" style="width:50%">
+                                                الحالات القائمة
+                                                <br />
+                                                <span>82</span>
+                                            </td>
+                                            <td colspan="2" class="TitleRed" style="width:50%">
+                                                الحالات القائمة للقادمين ضمن خطة الإجلاء
+                                                <br />
+                                                <span>77</span>
+                                            </td>
+                                        </tr>
+                                                                            <tr>
+                                            <td class="col-xs-6"  colspan="2" style="border-bottom:none;">
+                                               وضع الحالات
+                                            </td>
+                                            <td class="col-xs-6" colspan="2" style="border-bottom:none;">
+                                                وضع الحالات
+                                            </td>
+                                        </tr>
+                                        <tr style="border-top:none;">
+                                            <td class="TitleGreen" style="border-left:none;border-top:none;">
+                                                مستقرة
+                                                <br />
+                                                <span>81</span>
+                                            </td>
+                                            <td class="TitleOrange" style="border-right:none;border-top:none;">
+                                                تحت العناية
+                                                <br />
+                                                <span>1</span>
+                                            </td>
+                                            <td rowspan="3" class="TitleGreen" style="border-left:none;border-top:none;">
+                                                مستقرة
+                                                <br />
+                                                <span>77</span>
+                                            </td>
+                                            <td rowspan="3" class="TitleOrange" style="border-right:none;border-top:none;">
+                                                تحت العناية
+                                                <br />
+                                                <span>0</span>
+                                            </td>
+                                        </tr>
 
 
-                                            <tr>
-                                                <td colspan="2" >
-                                                    <div class="row">
-                                                        <div class="col-xs-4">
-                                                            القادمين من الخارج
-                                                            <br />
-                                                            <span>82</span>
-                                                        </div>
-                                                        <div class="col-xs-4">
-                                                            المخالطين للقادمين من الخارج
-                                                            <br />
-                                                            <span>5</span>
-                                                        </div>
-                                                        <div class="col-xs-4">
-                                                            الحالات المحلية
-                                                            <br />
-                                                            <span>0</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <td colspan="2" class="" style="color:white; background-color:#548235;">
-                                                    المتعافين
-                                                    <br />
-                                                    <span>22</span>
-                                                </td>
-                                            </tr>
-                                                                            </thead>
+                                        <tr>
+                                            <td>
+                                                القادمين من الخارج
+                                                <br />
+                                                <span>76</span>
+                                            </td>
+                                            <td>
+                                                المخالطين للقادمين من الخارج
+                                                <br />
+                                                <span>6</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                الحالات المحلية
+                                                <br />
+                                                <span>0</span>
+                                            </td>
+                                        </tr>
+                                                                            <tr>
+                                            <td colspan="4" style="color:white;background-color:#548235;">
+                                                المتعافين
+                                                <br />
+                                                <span>30</span>
+                                            </td>
+                                        </tr>
+                                                                        </thead>
                                     <tbody>
                                 </table>
                             </div>
@@ -1001,91 +1039,91 @@
 
                                                             <tr class="TRSize">
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3921" target="_blank">
+                                                                    <a href="/COVID19/Details/3928" target="_blank">
                                                                         
-                                                                        <span style="color:gray"> 09/03/2020</span>
+                                                                        <span style="color:gray"> 11/03/2020</span>
                                                                     </a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3921" target="_blank">
+                                                                    <a href="/COVID19/Details/3928" target="_blank">
                                                                         
 
-                                                                        وزارة الصحة تعلن تعافي ثمان حالات إضافية من فيروس كورونا (كوفيد 19)
+                                                                        وزارة الصحة: فحوصات الدفعة الأولى من المواطنين القادمين من إيران ضمن خطة الاجلاء بينت وجود 77 حالة قائمة وسلامة 88 شخص من فيروس كورونا
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr class="TRSize">
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3920" target="_blank">
+                                                                    <a href="/COVID19/Details/3927" target="_blank">
                                                                         
-                                                                        <span style="color:gray"> 09/03/2020</span>
+                                                                        <span style="color:gray"> 10/03/2020</span>
                                                                     </a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3920" target="_blank">
+                                                                    <a href="/COVID19/Details/3927" target="_blank">
                                                                         
 
-                                                                        وزارة الصحة: غلق أحد المقاهي بعد ارتياده من قبل اثنين من العائدين من دول منتشر بها فيروس كورونا
+                                                                        وزارة الصحة تعلن تعافي ثماني حالات إضافية من فيروس كورونا (كوفيد 19)
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr class="TRSize">
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3919" target="_blank">
+                                                                    <a href="/COVID19/Details/3926" target="_blank">
                                                                         
-                                                                        <span style="color:gray"> 09/03/2020</span>
+                                                                        <span style="color:gray"> 10/03/2020</span>
                                                                     </a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3919" target="_blank">
+                                                                    <a href="/COVID19/Details/3926" target="_blank">
                                                                         
 
-                                                                        رئيس المجلس الأعلى للصحة يستعرض مع خبير دولي جهود المملكة في احتواء فيروس كورونا (كوفيد 19)
+                                                                        جلالة الملك المفدى يزور القيادة العامة لقوة دفاع البحرين
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr class="TRSize">
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3918" target="_blank">
+                                                                    <a href="/COVID19/Details/3925" target="_blank">
                                                                         
-                                                                        <span style="color:gray"> 09/03/2020</span>
+                                                                        <span style="color:gray"> 10/03/2020</span>
                                                                     </a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3918" target="_blank">
+                                                                    <a href="/COVID19/Details/3925" target="_blank">
                                                                         
 
-                                                                        وزارة الصحة: إيقاف طبيب يعمل بإحدى عيادات الأسنان الخاصة وإحالته للنيابة العامة لمخالفته إجراءات الحجر المنزلي
+                                                                        بعد استكمالهم مدة 14 يومًا والتأكد من سلامتهم وخلوهم من الفيروس..وزارة الصحة: خروج 47 حالة من الحجر الصحي الاحترازي
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr class="TRSize">
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3917" target="_blank">
+                                                                    <a href="/COVID19/Details/3924" target="_blank">
                                                                         
-                                                                        <span style="color:gray"> 09/03/2020</span>
+                                                                        <span style="color:gray"> 10/03/2020</span>
                                                                     </a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3917" target="_blank">
+                                                                    <a href="/COVID19/Details/3924" target="_blank">
                                                                         
 
-                                                                        سمو ولي العهد: وحدة المجتمع وتماسكه مرتكز النجاح لمواجهة كافة التحديات
+                                                                        وزارة خارجية مملكة البحرين تدعو جميع المواطنين إلى عدم السفر في هذه الفترة إلا للضرورة القصوى
                                                                     </a>
                                                                 </td>
                                                             </tr>
                                                             <tr class="TRSize">
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3916" target="_blank">
+                                                                    <a href="/COVID19/Details/3923" target="_blank">
                                                                         
-                                                                        <span style="color:gray"> 09/03/2020</span>
+                                                                        <span style="color:gray"> 10/03/2020</span>
                                                                     </a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="/COVID19/Details/3916" target="_blank">
+                                                                    <a href="/COVID19/Details/3923" target="_blank">
                                                                         
 
-                                                                        سمو ولي العهد يصدر قراراً بوقف مشاركات موظفي الجهات الحكومية خارج المملكة في المهمات الرسمية والتدريبية
+                                                                        مثمنًا توجيهات جلالة الملك وجهود سمو ولي العهد..المجلس الأعلى للشئون الإسلامية يشيد بجهود مملكة البحرين لمواجهة (كورونا)
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -1114,18 +1152,23 @@
                                     
                                     <div class="col-md-6">
                                         <p><strong class="TitleBlue">الاصدارات</strong></p>
-                                                <a href="/Content/Upload/File/637183166983680000-محاضرة-كورونا-باللغة-العربية.pdf" target="_blank" class="publication-att">
-                                                    <div class="publication-icon"><i class="fa fa-file-text"></i></div>
-                                                    <div id="" class="publication-text">محاضرة فيروس كورونا COVID-19 &nbsp;<span style="color:gray"> 26/02/2020</span></div>
+                                                <a href="/Content/Upload/File/637185795223900000-Tips-for-travelers_ar.jpg" target="_blank" class="publication-att">
+                                                    <div class=""><i class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;</div>
+                                                    <div id="" class="">تعليمات الحجر المنزلي &nbsp;<span class="pull-left" style="color:gray"> 04/03/2020</span></div>
                                                 </a>
                                                 <a href="/Content/Upload/File/637183227871110000-flyer---AR.pdf" target="_blank" class="publication-att">
-                                                    <div class="publication-icon"><i class="fa fa-file-text"></i></div>
-                                                    <div id="" class="publication-text">عن فيروس كورونا COVID-19 &nbsp;<span style="color:gray"> 26/02/2020</span></div>
+                                                    <div class=""><i class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;</div>
+                                                    <div id="" class="">عن فيروس كورونا COVID-19 &nbsp;<span class="pull-left" style="color:gray"> 26/02/2020</span></div>
                                                 </a>
-                                                <a href="/Content/Upload/File/637185795223900000-Tips-for-travelers_ar.jpg" target="_blank" class="publication-att">
-                                                    <div class="publication-icon"><i class="fa fa-file-text"></i></div>
-                                                    <div id="" class="publication-text">تعليمات الحجر المنزلي &nbsp;<span style="color:gray"> 04/03/2020</span></div>
+                                                <a href="/Content/Upload/File/637183166983680000-محاضرة-كورونا-باللغة-العربية.pdf" target="_blank" class="publication-att">
+                                                    <div class=""><i class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;</div>
+                                                    <div id="" class="">محاضرة فيروس كورونا COVID-19 &nbsp;<span class="pull-left" style="color:gray"> 26/02/2020</span></div>
                                                 </a>
+                                        <a href="/COVID19/Publications">
+                                            <div class="publication-view-more">
+                                                <span style="color:#337ab7"><b>عرض المزيد</b></span>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="col-md-6">
                                         <p><strong class="TitleBlue">انفوجرافيك</strong></p>
@@ -1334,7 +1377,7 @@
                     <a id="Webanalytics" class="policyanchor" href="/OtherPages/AnalyticsReport">التقارير التحليلية للموقع</a>
                 </div>
                 <div id="lastupdated" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <ul class="list-unstyled"><li><b>آخر تحديث:</b> 09/03/2020 <a class="policyicon" href="/OtherPages/AnalyticsReport" data-toggle="tooltip" title="التقرير التحليلي للموقع"><i class="fa fa-line-chart"></i></a> <a class="policyicon" href="/OtherPages/ContactUs" data-toggle="tooltip" title="تواصل معنا"><i class="fa fa-phone"></i></a> <a class="policyicon" data-toggle="tooltip" title="أضف إلى المفضلة" href="" id="bookmarkme" rel="sidebar" onclick="window.external.AddFavorite(location.href, document.title);"><i class="fa fa-star"></i></a> <a class="policyicon" href="https://webmail.health.gov.bh/owa" data-toggle="tooltip" title="البريد الإلكتروني"><i class="fa fa-envelope"></i></a></li></ul>
+                    <ul class="list-unstyled"><li><b>آخر تحديث:</b> 11/03/2020 <a class="policyicon" href="/OtherPages/AnalyticsReport" data-toggle="tooltip" title="التقرير التحليلي للموقع"><i class="fa fa-line-chart"></i></a> <a class="policyicon" href="/OtherPages/ContactUs" data-toggle="tooltip" title="تواصل معنا"><i class="fa fa-phone"></i></a> <a class="policyicon" data-toggle="tooltip" title="أضف إلى المفضلة" href="" id="bookmarkme" rel="sidebar" onclick="window.external.AddFavorite(location.href, document.title);"><i class="fa fa-star"></i></a> <a class="policyicon" href="https://webmail.health.gov.bh/owa" data-toggle="tooltip" title="البريد الإلكتروني"><i class="fa fa-envelope"></i></a></li></ul>
                 </div>
             </div>
         </div>
