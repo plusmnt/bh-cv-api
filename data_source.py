@@ -37,7 +37,7 @@ def get_data(enable_cache):
 	data["stable_existing_cases"]=table.findAll("td")[5].findAll("span")[0].text
 	data["critical_existing_cases"]=table.findAll("td")[6].findAll("span")[0].text
 	data["arrived_stable_existing_cases_icrp"]=table.findAll("td")[7].findAll("span")[0].text
-	data["arrived_critical_existing_cases_icrp"]=table.findAll("td")[6].findAll("span")[0].text
+	data["arrived_critical_existing_cases_icrp"]=table.findAll("td")[8].findAll("span")[0].text
 	data["arrivals_from_abroad"]=table.findAll("td")[9].findAll("span")[0].text
 	data["contacts_of_arrivals_from_abroad"]=table.findAll("td")[10].findAll("span")[0].text
 	data["local_cases"]=table.findAll("td")[11].findAll("span")[0].text
