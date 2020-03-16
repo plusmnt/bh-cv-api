@@ -64,5 +64,5 @@ python3 server.py
 
 - More information about [Coronavirus (COVID-19)](https://www.flattenthecurve.com/)
 - Bahrain Coronavirus COVID-19 Updates [coronabh.com](https://coronabh.com/)
-- Volunteer in the Campaign to Combat Coronavirus (COVID-19)[volunteer.gov.bh](http://volunteer.gov.bh)
+- Volunteer in the Campaign to Combat Coronavirus (COVID-19) [volunteer.gov.bh](http://volunteer.gov.bh)
 
