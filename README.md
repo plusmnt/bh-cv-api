@@ -33,11 +33,11 @@ More example available in the example folder.
 
 ### Errors
 the following errors might happen:
-- if there is no data cache and the server can not fetch data from Bahrain MOH website it will return 
+- if there is no data cache and the server can not fetch data from the Bahrain MOH website it will return:
 ```
 {"erorr": "connection error"}
 ```
-- if the there is a cached data and the server can not fetch data from Bahrain MOH website, cache data will be returned.
+- if there is a cached data and the server can not fetch data from the Bahrain MOH website, cache data will be returned.
 
 ## The code
 The server code created with `python3` using `BeautifulSoup` to parse the HTML table from [Ministry of Health website](https://www.moh.gov.bh/COVID19)
