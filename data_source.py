@@ -4,25 +4,46 @@ import pytz
 import requests
 import json
 from bs4 import BeautifulSoup
+import os.path
+from os import path
 
+
+def get_local_data():
+	if path.exists("cvbh.json"):
+		local_file=open("cvbh.json","r")
+		local_data=local_file.read()
+		if(len(local_data)>5):
+			data=json.loads(local_data)
+			local_file.close()
+			return data
+	return None
 
 def get_data(enable_cache):
 	#read local cache file
-	if enable_cache ==True:
-		local_file=open("cvbh.json","r")
-		local_data=local_file.read()
-		#confirm the file is not empty
-		if(len(local_data)>5):
-			data=json.loads(local_data)
+	local_data=get_local_data()
+	if local_data != None:
+		if enable_cache ==True:
 			now=int(datetime.datetime.now(tz=pytz.utc).timestamp() * 1000)
 			#if less than 5min. request update cache, else return cache
-			if now-data["request_timestamp"] <(5*60*1000):
-				local_file.close()
+			if now-local_data["request_timestamp"] <(5*60*1000):
 				print("Return cache")
-				return data
+				return local_data
+
+	try :
+		r = requests.get('https://www.moh.gov.bh/COVID19')
+		html=r.text
+	except requests.Timeout:
+		#return cached data
+		if local_data == None:
+			local_data={"error:":"timeout error"}
+		return local_data
+	except requests.ConnectionError:
+		#return cached data
+		if local_data == None:
+			local_data={"erorr": "connection error"}
+		return local_data
+
 	print("Return new data")
-	r = requests.get('https://www.moh.gov.bh/COVID19')
-	html=r.text
 	# html=open("demo.html","r").read();
 	#parse html
 	soup=BeautifulSoup(html, "html5lib")
@@ -52,5 +73,3 @@ def get_data(enable_cache):
 	file.write( json.dumps(data) )
 	file.close()
 	return data
-
-
