@@ -10,16 +10,9 @@ You can just call the above link and it will return the data as a josn object.
 | key | Description |
 | ------ | ------ |
 | total_check | Total Tested |
-| negative_cases | Tested Negative |
 | existing_cases | Active Cases |
-| arrived_cases_icrp |International COVID-19 Repatriation Programme (ICRP)|
 | stable_existing_cases | Stable cases  |
 | critical_existing_cases |Critical cases |
-| arrived_stable_existing_cases_icrp |ICRP Stable cases |
-| arrived_critical_existing_cases_icrp | ICRP Critical cases |
-| arrivals_from_abroad | Arrivals from abroad (Not ICRP) |
-| contacts_of_arrivals_from_abroad | Contacts of arrivals from abroad |
-| local_cases | Local cases (Community) |
 | recovered_cases | Discharged |
 | deaths | Deaths |
 |request_timestamp | Unix time to know when the data fetched.|

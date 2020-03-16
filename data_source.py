@@ -52,18 +52,12 @@ def get_data(enable_cache):
 	#get total check 
 	data=dict()
 	data["total_check"]=table.findAll("tr")[0].findAll("span")[0].text
-	data["negative_cases"]=table.findAll("td")[0].findAll("span")[0].text
-	data["existing_cases"]=table.findAll("td")[1].findAll("span")[0].text
-	data["arrived_cases_icrp"]=table.findAll("td")[2].findAll("span")[0].text
-	data["stable_existing_cases"]=table.findAll("td")[5].findAll("span")[0].text
-	data["critical_existing_cases"]=table.findAll("td")[6].findAll("span")[0].text
-	data["arrived_stable_existing_cases_icrp"]=table.findAll("td")[7].findAll("span")[0].text
-	data["arrived_critical_existing_cases_icrp"]=table.findAll("td")[8].findAll("span")[0].text
-	data["arrivals_from_abroad"]=table.findAll("td")[9].findAll("span")[0].text
-	data["contacts_of_arrivals_from_abroad"]=table.findAll("td")[10].findAll("span")[0].text
-	data["local_cases"]=table.findAll("td")[11].findAll("span")[0].text
-	data["recovered_cases"]=table.findAll("tr")[7].findAll("td")[0].findAll("span")[0].text
-	data["deaths"]=table.findAll("tr")[8].findAll("td")[0].findAll("span")[0].text
+	data["existing_cases"]=table.findAll("tr")[1].findAll("span")[0].text
+	data["stable_existing_cases"]=table.findAll("td")[2].findAll("span")[0].text
+	data["critical_existing_cases"]=table.findAll("td")[3].findAll("span")[0].text
+
+	data["recovered_cases"]=table.findAll("td")[4].findAll("span")[0].text
+	data["deaths"]=table.findAll("td")[5].findAll("span")[0].text
 	
 	#get current UTC timestamp
 	#https://stackoverflow.com/a/52146362
