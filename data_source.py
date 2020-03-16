@@ -42,6 +42,8 @@ def get_data(enable_cache):
 	data["contacts_of_arrivals_from_abroad"]=table.findAll("td")[10].findAll("span")[0].text
 	data["local_cases"]=table.findAll("td")[11].findAll("span")[0].text
 	data["recovered_cases"]=table.findAll("tr")[7].findAll("td")[0].findAll("span")[0].text
+	data["deaths"]=table.findAll("tr")[8].findAll("td")[0].findAll("span")[0].text
+	
 	#get current UTC timestamp
 	#https://stackoverflow.com/a/52146362
 	data["request_timestamp"]=int(datetime.datetime.now(tz=pytz.utc).timestamp() * 1000)

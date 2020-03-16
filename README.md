@@ -22,6 +22,7 @@ You can just call the above link and it will return the data as a josn object.
 | contacts_of_arrivals_from_abroad | Contacts of arrivals from abroad |
 | local_cases | Local cases (Community) |
 | recovered_cases | Discharged |
+| deaths | Deaths |
 
 ## Quick start
 ```
