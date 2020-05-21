@@ -53,9 +53,10 @@ To run the server locally just run
 python3 server.py
 ```
 
-# Extra
+## Extra
 
 - More information about [Coronavirus (COVID-19)](https://www.flattenthecurve.com/)
 - Bahrain Coronavirus COVID-19 Updates [coronabh.com](https://coronabh.com/)
 - Volunteer in the Campaign to Combat Coronavirus (COVID-19) [volunteer.gov.bh](http://volunteer.gov.bh)
+- The Coronavirus Tech Handbook [coronavirustechhandbook.com](https://coronavirustechhandbook.com/home)
 

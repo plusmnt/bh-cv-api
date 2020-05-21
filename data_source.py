@@ -56,8 +56,8 @@ def get_data(enable_cache):
 	data["stable_existing_cases"]=table.findAll("td")[2].findAll("span")[0].text
 	data["critical_existing_cases"]=table.findAll("td")[3].findAll("span")[0].text
 
-	data["recovered_cases"]=table.findAll("td")[4].findAll("span")[0].text
-	data["deaths"]=table.findAll("td")[5].findAll("span")[0].text
+	data["recovered_cases"]=table.findAll("td")[5].findAll("span")[0].text
+	data["deaths"]=table.findAll("td")[6].findAll("span")[0].text
 	
 	#get current UTC timestamp
 	#https://stackoverflow.com/a/52146362
