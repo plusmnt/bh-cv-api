@@ -36,9 +36,10 @@ the following errors might happen:
 The server code created with `python3` using `BeautifulSoup` to parse the HTML table from [Ministry of Health website](https://www.moh.gov.bh/COVID19)
 
 following library are required to run the code locally:
-- [pip install requests](https://pypi.org/project/requests/)
-- [pip install beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
-- [pip install html5lib](https://pypi.org/project/html5lib/)
+- [pip3 install pytz](https://pypi.org/project/pytz/)
+- [pip3 install requests](https://pypi.org/project/requests/)
+- [pip3 install beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
+- [pip3 install html5lib](https://pypi.org/project/html5lib/)
 
 Files:
 - data_source.py: will load the data and return dictionary will all the keys
