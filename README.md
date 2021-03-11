@@ -2,7 +2,6 @@
 
 This is a json interface for the [summary of cases table](https://www.moh.gov.bh/COVID19) in Bahrain Ministry of Health website.
 
-## [Live Demo](https://cvapi.awal.pw/)
 
 You can just call the above link and it will return the data as a josn object.
 
@@ -57,7 +56,6 @@ python3 server.py
 ## Extra
 
 - More information about [Coronavirus (COVID-19)](https://www.flattenthecurve.com/)
-- Bahrain Coronavirus COVID-19 Updates [coronabh.com](https://coronabh.com/)
 - Volunteer in the Campaign to Combat Coronavirus (COVID-19) [volunteer.gov.bh](http://volunteer.gov.bh)
 - The Coronavirus Tech Handbook [coronavirustechhandbook.com](https://coronavirustechhandbook.com/home)
 
